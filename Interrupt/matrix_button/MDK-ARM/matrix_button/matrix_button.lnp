@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"matrix_button\startup_stm32f103xb.o"
+"matrix_button\main.o"
+"matrix_button\stm32f1xx_it.o"
+"matrix_button\stm32f1xx_hal_msp.o"
+"matrix_button\stm32f1xx_hal_gpio_ex.o"
+"matrix_button\stm32f1xx_hal_tim.o"
+"matrix_button\stm32f1xx_hal_tim_ex.o"
+"matrix_button\stm32f1xx_hal.o"
+"matrix_button\stm32f1xx_hal_rcc.o"
+"matrix_button\stm32f1xx_hal_rcc_ex.o"
+"matrix_button\stm32f1xx_hal_gpio.o"
+"matrix_button\stm32f1xx_hal_dma.o"
+"matrix_button\stm32f1xx_hal_cortex.o"
+"matrix_button\stm32f1xx_hal_pwr.o"
+"matrix_button\stm32f1xx_hal_flash.o"
+"matrix_button\stm32f1xx_hal_flash_ex.o"
+"matrix_button\stm32f1xx_hal_exti.o"
+"matrix_button\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "matrix_button\matrix_button.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "matrix_button.map" -o matrix_button\matrix_button.axf
